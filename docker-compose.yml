@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  parser:
+    build:
+      context: .
+      dockerfile: Dockerfile_parse
+    volumes:
+      - ./app:/app
